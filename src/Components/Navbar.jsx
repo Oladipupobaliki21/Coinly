@@ -31,9 +31,9 @@ const Navbar = () => {
   return (
     <>
         <header className=" bg-[#F7FBFE]">
-          <nav className="flex justify-between px-4 sm:px-8 md:px-16 lg:px-[80px] items-center py-4 sm:py-6 md:py-[30px] w-full">
+          <nav className="flex justify-between items-center py-4 sm:py-6 md:py-[30px] w-full">
             <Link to="/">
-                <img src={logo2} alt="Logo" className="w-24 sm:w-32 md:w-40" />
+                <img src={logo2} alt="Logo" className="w-30 sm:w-32 md:w-30" />
             </Link>
 
             {/* Desktop Navigation */}
