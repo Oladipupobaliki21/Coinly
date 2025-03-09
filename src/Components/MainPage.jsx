@@ -1,24 +1,12 @@
-import { motion } from 'framer-motion'; // Animations
 import forward from '../assets/forward.svg';
 import hero from '../assets/hero.svg';
 import Navbar from './Navbar';
 
 const MainPage = () => {
- 
-
   return (
     <div className="min-h-screen w-full flex flex-col px-4 sm:px-8 md:px-16 lg:px-[80px] bg-[#F7FBFE] overflow-hidden">
-      {/* Sticky Header */}
-      
-      <Navbar/>
-
-      {/* Hero Section */}
-      <motion.section
-        className="w-full text-center pt-8 sm:pt-12 md:pt-[5rem]"
-        initial={{ opacity: 0, y: 50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
-      >
+      <Navbar />
+      <section className="w-full text-center pt-8 sm:pt-12 md:pt-[5rem]">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-[88px] font-sans font-medium text-[#002245] leading-tight sm:leading-[1.2]">
             Send your coins <br className="hidden sm:block" /> without hassle
@@ -33,17 +21,10 @@ const MainPage = () => {
             Get Started <img src={forward} alt="Forward" />
           </button>
         </div>
-      </motion.section>
-
-      {/* Hero Image */}
-      <motion.div
-        className="w-full flex justify-center items-center mt-8 sm:mt-12 md:mt-16"
-        initial={{ opacity: 0, x: -50 }}
-        animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.8, delay: 0.5 }}
-      >
+      </section>
+      <div className="w-full flex justify-center items-center mt-8 sm:mt-12 md:mt-16">
         <img src={hero} alt="Hero" className="w-full max-w-[800px]" />
-      </motion.div>
+      </div>
     </div>
   );
 };
