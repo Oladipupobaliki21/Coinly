@@ -12,3 +12,7 @@
     max-width: 4px;
     height: auto;
 }
+
+body {
+    overflow-y: scroll;
+  }

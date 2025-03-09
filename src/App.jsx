@@ -4,10 +4,12 @@ import { AboutUsPage } from "./pages/AboutUsPage";
 import FaqsPage from "./pages/FaqsPage";
 import SignInPage from "./pages/SignInPage";
 import SignUpPage from "./pages/SignUpPage";
+import ScrollToTop from "./Components/ScollToTop";
 
 function App() {
   return (
     <Router>
+      <ScrollToTop /> 
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/about" element={<AboutUsPage />} />
